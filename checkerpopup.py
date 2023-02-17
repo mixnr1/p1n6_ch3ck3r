@@ -4,7 +4,7 @@ import time
 import notify2
 import os
 os.environ['DISPLAY'] = ':0'
-notify2.init("My Application")
+notify2.init("p1n6_ch3ck3r")
 ip_file = open(config.path_to_file+'ip_list.txt', 'r')
 for line in ip_file:
     response=subprocess.Popen(["ping", "-c", "1", line.strip()],
