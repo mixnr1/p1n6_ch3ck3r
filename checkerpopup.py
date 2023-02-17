@@ -2,6 +2,8 @@ import subprocess
 import config
 import time
 import notify2
+import os
+os.environ['DISPLAY'] = ':0'
 notify2.init("My Application")
 ip_file = open(config.path_to_file+'ip_list.txt', 'r')
 for line in ip_file:
